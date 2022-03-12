@@ -77,3 +77,13 @@ a:active { /* selected link */
     background-color: #017CC1;
     color: #ffffff;
 }
+
+#hero-section {
+    background-color: #ffffff;
+}
+#work-section {
+    background-color: #ffffff;
+}
+#contact-section {
+    background-color: #ffffff;
+}
