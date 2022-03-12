@@ -40,9 +40,6 @@ a {
     color: #017CC1;
     text-decoration: none; /* no underlining */
 }
-a:visited { /* *visited link */
-    color: #017CC1;
-}
 a:hover {
     color: #cc6540;
     text-decoration: underline; /* underlining when hovering over link */
