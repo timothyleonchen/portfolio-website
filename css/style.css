@@ -92,6 +92,12 @@ header{
     width: 100%;
 }
 
+.logo {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 main {
     padding-top: 200px;
 }
