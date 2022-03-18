@@ -99,7 +99,7 @@ header{
 }
 
 main {
-    padding-top: 200px;
+    padding-top: 99px;
 }
 
 #hero-section {
@@ -108,9 +108,17 @@ main {
     display: inline-block;
     width: 100%;
 }
+#hero-section span {
+    display: block;
+}
+
 #work-section {
     background-color: #ffffff;
 }
+#work-section h2{
+    text-align: center;
+}
+
 #contact-section {
     background-color: #ffffff;
 }
@@ -126,7 +134,7 @@ svg {
 .container {
     padding: 0 15px;
 }
-.row {
+.row{
     margin: 25px 0; 
 }
 
@@ -166,14 +174,28 @@ Medium devices (640px and larger)
         float: right;
         margin-top: 4px;
     }
+    .col-md-6 {
+        width: 50%;
+    }
+    [class*="col-md-6"] {
+        float: left;
+        padding-right: 10px;
+    }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    [class*="col-"] {
+        float: left;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+    [class*="col-"] {
+        float: left;
+    }
 }
+
