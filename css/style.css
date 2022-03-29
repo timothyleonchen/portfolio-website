@@ -4,6 +4,8 @@ Background color (White): #ffffff;
 Font color (Black): 000000;
 */
 
+
+/*default css*/
 * {
     box-sizing: border-box;
 }
@@ -85,8 +87,8 @@ a:active { /* selected link */
 
 header{
     background-color: #cccccc;
-    text-align: center;
-    padding: 10px 0;
+    /*text-align: center;*/
+    padding: 10px 0 4px;
     position: fixed;
     box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
     width: 100%;
@@ -94,9 +96,10 @@ header{
 
 .logo {
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
 }
+
 .imgWrapper {
     padding: 25px;
 }
@@ -105,12 +108,12 @@ header{
 }
 
 main {
-    padding-top: 99px;
+    padding-top: 56px;
 }
 
 #hero-section {
     background-color: #cccccc;
-    padding: 20px 0;
+    padding: 10px 0;
     display: inline-block;
     width: 100%;
 }
@@ -191,6 +194,39 @@ svg {
     padding: 0px;
 }
 
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+.navtoggle.responsive li  {
+    display: block;
+}
+
 /* Layout Styling */
 .container {
     padding: 0 15px;
@@ -213,19 +249,7 @@ svg {
     text-align: center;
 }
 
-nav > ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav > ul > li {
-    display: inline-block;
-}
-nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
-}
+
 
 /*CSS Animation*/
 @keyframes color-change {
@@ -265,23 +289,49 @@ nav > ul > li > a {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 10px 0 4px;
     }
-    
+
+    main {
+        padding-top: 56px;
+    }
+
     nav {
         width: auto;
         float: right;
         margin-top: 4px;
     }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {
+    display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
+
     .col-md-6 {
         width: 50%;
     }
     [class*="col-md-6"] {
         float: left;
         padding-right: 10px;
+    }
+
+    .logo {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
     }
 }
 /* ==============================
@@ -296,9 +346,14 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
     }
+    
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 10px 0 4px;
+    }
+
+    main {
+        padding-top: 56px;
     }
     
     nav {
